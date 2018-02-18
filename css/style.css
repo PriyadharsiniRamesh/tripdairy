@@ -1,0 +1,293 @@
+/*-----CSS----*/
+
+/*----body----*/
+
+body {
+	background:url(../image/bgi.png) repeat top left;
+}
+/*-----Navbar----*/
+.navbar-brand img {
+	height:40px;
+	width:60px;
+}
+
+/*----About----*/
+.about .upper {
+	text-transform:uppercase;
+	color: #82a;
+	font-size: 1.1em;
+    font-family: Roboto;
+}
+.about h2 {
+	padding:50px 120px;
+}
+.abt-txt {
+	display:flex;
+	text-align:center;
+	line-height:2.5;
+	padding:50px 100px;
+	font-weight: 300;
+	font-size:1.4em;
+}
+/*---Register---*/
+.reg-txt {
+	padding-top:50px;
+	padding-left:80px;
+}
+.reg-title {
+	color: #82a;
+    font-family: Roboto;
+	font-size:1.8em;
+	padding-top:50px;
+}
+.register h5 {
+	font-weight:200;
+}
+
+.register form {
+	padding:50px 70px;
+}
+.inpt input {
+	
+	border:blueviolet 1px solid;
+	border-radius:8px;
+	width:300px;
+	height:40px;
+}
+.btns {
+	line-height:2.5;
+	display:inline-block;
+	width:100px;
+	border-width:6px;
+	border:1px solid;
+	background:blueviolet;
+	color:floralwhite;
+	text-align:center;
+}
+#form-row {
+	display:inline-flex;
+}
+
+/*----Subscription plans----*/
+/*--------- Font ------------*/
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*----user-profile---*/
+.user-logo img {
+	height:40px;
+	width:40px;
+}
+.fl{ float:left; }
+.fr{ float: right; }
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;  /*For IE 6/7 (trigger hasLayout) */
+}
+.wrapper { 
+	/*background: #F2F2F2;*/
+	background-image: url("image/bg.png");
+    font-family: 'Droid Sans', sans-serif;
+    line-height: 1;
+    font-size: 16px;
+}
+.pricing-table {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 10px;
+    padding-right: 0;
+}
+.pricing-table .heading{
+    text-transform:uppercase;
+	color: #82a;
+	font-size: 2.4em;
+    font-family: Roboto;
+    margin-bottom: 4rem;
+	font-weight:500;
+}
+.block{
+    width: 30%;    
+    margin: 0 15px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;    
+/*    border: 1px solid red;*/
+}
+/*Shared properties*/
+.title,.pt-footer{
+    color: #FEFEFE;
+    text-transform: capitalize;
+    line-height: 1.5;
+    position: relative;
+}
+.content{
+    position: relative;
+    color: #FEFEFE;
+    padding: 20px 0 10px 0;
+}
+/*arrow creation*/
+.content:after, .content:before,.pt-footer:before,.pt-footer:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.pt-footer:after,.pt-footer:before{
+    top:0;
+}
+.content:after,.pt-footer:after {
+	border-color: rgba(136, 183, 213, 0);	
+	border-width: 5px;
+	margin-left: -5px;
+}
+/*/arrow creation*/
+.price{
+    position: relative;
+    margin-bottom: 0.625rem;
+}
+.price span{    
+    font-size: 3rem;
+    letter-spacing: 8px;
+    font-weight: bold;        
+}
+.price sup{
+    font-size: 1.5rem;    
+	left:5px;
+}
+.hint{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.features{
+    list-style-type: none;    
+    background: #FFFFFF;
+    color: #9C9C9C;
+    padding:30px 22%;
+    font-size: 0.9rem;
+}
+.features li{
+    padding:15px 0;
+    width: 100%;
+}
+.features li span{
+   padding-right: 0.4rem; 
+}
+.pt-footer{
+    font-size: 0.95rem;
+    text-transform:uppercase;
+}
+.pt-footer input {
+	background-color:transparent;
+	line-height:2.5;
+	color: floralwhite;
+	font-size:1.5em;
+}
+/*PERSONAL*/
+.personal .title{        
+    background: #78CFBF;    
+}
+.personal .content,.personal .pt-footer{
+    background: #82DACA;
+}
+.personal .content:after{	
+	border-top-color: #82DACA;	
+}
+.personal .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+/*PROFESSIONAL*/
+.professional .title{
+    background: #E3536C;
+}
+.professional .content,.professional .pt-footer{
+    background: #EB6379;
+}
+.professional .content:after{	
+	border-top-color: #EB6379;
+}
+.professional .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+/*BUSINESS*/
+.business .title{
+    background: #3EC6E0;
+}
+.business .content,.business .pt-footer{
+    background: #53CFE9;
+}
+.business .content:after{	
+	border-top-color: #53CFE9;
+}
+.business .pt-footer:after {	
+	border-top-color: #FFFFFF;	
+}
+
+/*--------profile--------*/
+.sub-plan {
+	text-align:-webkit-center;
+}
+.sub-plan th {
+	font-size:1.5em;
+	color:blueviolet;
+ }
+.sub-plan img {
+	height:100px;
+	width:100px;
+	margin-bottom:50px;
+}
+.sub-plan thead th,td {
+	padding-left:30px;
+	padding-right:30px;
+}
+.sub-plan table td,th {
+    border-left: 1px groove blueviolet;
+    border-right: 1px groove blueviolet; 
+}
+.sub-plan tr {
+	border-bottom:1px groove blueviolet;
+}
+.sub-plan table {
+	
+	border:1px  blueviolet;
+	border-style:groove;
+	border-collapse:collapse;
+	line-height:2.5;
+}
+.sub-plan form{
+	padding-top:50px;
+	padding-left:-10px;
+}
+.sub-plan span {
+	color: blueviolet;
+    font-family: Roboto;
+	font-size:1.9em;
+	text-transform:uppercase;
+	font-weight:500;
+}
