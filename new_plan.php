@@ -33,7 +33,8 @@
 			?>
 		</div>
 		<div class="sub-plan">
-			<img src="image/user_icon.png" alt="user-profile" />
+			<img src="image/user_icon.png" alt="user-profile" /><br/>
+			<span>New plan</span><br><br>
 			<?php
 			if( !( $db = mysql_connect( 'localhost' , 'root' , '' ) ) )
 				die(mysql_error());
@@ -52,7 +53,6 @@
 			  else{
 				?>
 			<table>
-			  <caption>New Plan</caption>
 			  <thead>
 				<tr>
 				  <th>Name</th>

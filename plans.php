@@ -1,3 +1,10 @@
+<?php
+	if(isset($_POST['subs3'])){
+		$_SESSION['ses_plan']='Business';
+		header("Location: new_plan.php");
+		exit();
+	}								
+?>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -124,14 +131,7 @@
 
 						<!-- PT-FOOTER -->
 						<div class="pt-footer">
-							<form method="POST" action=""><input type="submit" value="Subscribe" name="subs3" /></form>
-							<?php
-								if(isset($_POST['subs3'])){
-									$_SESSION['ses_plan']='Business';
-									header("Location:new_plan.php");
-									exit();
-								}								
-							?>
+							<form method="POST" action=""><input type="submit" value="Subscribe" name="subs3" /></form>							
 						</div>
 						<!-- /PT-FOOTER -->
 					</div>
